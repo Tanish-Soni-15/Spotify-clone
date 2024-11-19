@@ -1,0 +1,426 @@
+/*body{
+    background-color: black;
+    color: white;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: Roboto;
+   
+}
+:root{
+  --a:0;
+  --b:78px;
+}
+body{
+    background-color: black;
+}
+.left .library .td-flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 183px;
+    font-size: 0.9rem;
+    gap: 17px;
+  margin-left: 4px
+}
+.left .library .play-button{
+    width: 22px;
+  height: 22px;
+  padding: 3px;
+  border-radius: 50%;
+}
+.border{
+    border: 2px solid black;
+    margin: 3px
+}
+.w-1{
+    font-weight: 700;
+}
+.container{
+    display: flex;
+    height: 97vh;
+}
+.left{
+    width: 28vw;
+   margin-left: -6px;
+}
+.right{
+   width: 76vw; 
+   position: relative;
+}
+.flex{
+  display: flex;
+}
+.home ul li{
+    display: flex;
+    gap: 17px;
+    width: 26px;
+    list-style: none;
+    margin: 11px 0px 15px -18px;
+}
+.bg-gray{
+    background-color: #121212;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+.bg-black{
+    background-color: black;
+}
+.logo{
+    padding: 11px 3px 3px 24px;
+}
+.border-radius{
+    border-radius: 8px;
+
+    
+}
+
+.m-1{
+    margin: 10px;
+}
+.p-1{
+    padding: 1px;
+}
+.p-2{
+    padding-left: 12px;
+}
+.library{
+    height: 73vh;
+    position: relative;
+}
+.library header{
+ display: flex;
+ position: relative;
+ padding: 2px 0px 6px 21px;
+}
+.library header img{
+    width: 27px;
+
+}
+.library header .plus{
+    height: 15px;
+    right: 16px;
+    position: absolute;
+    top: 18px;
+}
+.library header p{
+    margin: 12px;
+}
+.library footer div a{
+    color: gray;
+    text-decoration: none;
+    font-size: 0.7rem;
+    margin: 8px;
+
+}
+.left .library main .playerlist{
+    text-align: center;
+    
+  background-color: #242424;
+  
+height: 30vh;
+  max-height: 30vh;
+  overflow-y: scroll;
+}
+.left .library main table{
+    margin: auto;
+  
+  border-spacing: 10px;
+}
+.library footer{
+    height: 40%;
+  position: absolute;
+  bottom: 0px;
+}
+.m-2{
+    margin-bottom: 7px;
+}
+.library footer button{
+    display: flex;
+margin: 20px;
+margin-top: 26px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  width: 92px;
+  text-align: center;
+  padding: 6px;
+  border-radius: 24px;
+}
+.library footer button img{
+    width: 18px;
+    margin: 0px 5px;
+}
+header nav button{
+    background-color: #121212;
+  border: none;
+  width: 24px;
+}
+.right header{
+    display: flex;
+  justify-content: space-between;
+  position: static;
+  height: 52px;
+  align-items: center;
+  margin: 0px;
+  width: 94%;
+  margin: 0px auto;
+}
+.right .button-signup{
+    color: gray;
+  background-color: #121212;
+  border: none;
+  font-size: 1.0rem;
+}
+.right .button-signup:hover{
+    color: #ffffff;
+}
+.right .button-login{
+    padding: 14px;
+  width: 105px;
+  border-radius: 51px;
+  font-size: 1.0rem;
+  font-weight: 500;
+  border: none;
+}
+.right .button-login:hover{
+    border: 1px solid white;
+    font-weight: 700;
+}
+
+.right nav{
+    display: flex;
+  gap: 17px;
+}
+.right .button{
+    display: flex;
+  gap: 31px;
+}
+.right main h1{
+    font-size: 1.4rem;
+    padding: 12px 0px 0px 21px
+}
+.right main .card{
+    width: 172px;
+    margin: 12px 0px 0px 21px;
+    position: relative;
+    transition: all 0.9s;
+}
+.right main .card:hover{
+  background-color: #191919;
+  --a:1;
+  --b:90px;
+}
+.right main .card img{
+    width: 100%;
+    border-radius: 50%;
+    height: 180px;
+  object-fit: cover;
+}
+.right .card h2{
+    font-size: 1rem;
+}
+.right .card p{
+    font-size: 0.9rem;
+}
+.right main{
+    background-color:#a8a8a81c;
+}
+.right .popular-artists .card {
+  padding: 8px;
+  border-radius: 8px;
+}
+.right .popular-artists .card button{
+    width: 48px;
+  background-color: #1fdf64;
+  border: none;
+  padding: 11px;
+  border-radius: 50%;
+  height: 47px;
+  position: absolute;
+  position: absolute;
+  right: 7px;
+  bottom: var(--b);
+  transition: all 0.5s ease-in-out;
+  opacity: var(--a);
+}
+.right .popular-artists .cards{
+    display: flex;
+  flex-wrap: wrap;
+  
+}
+.right .popular-artists {
+    overflow-y: auto;
+  max-height: 78vh;
+  height: 78vh;
+}
+.right .playbar{
+    background-color: #121212;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.right .playbar .playbutton{
+    display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.b-1{
+    background-color: black;
+    border: none;
+}
+.right .playbar .playbutton .play-button{
+    width: 35px;
+  height: 35px;
+  padding: 8px;
+  border-radius: 50%;
+}
+.play-now{
+    display: flex;
+  width: 99px;
+  gap: 6px;
+}
+.seekbar{
+    display: flex;
+    justify-content: center;
+    margin-top: 9px;
+    align-items: center;
+    gap: 8px;
+}
+.circle{
+    width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+  transition: left 0.5s;
+}
+.line{
+    width: 46%;
+  background-color: gray;
+  height: 3px;
+  border-radius: 5px;
+ position: relative;
+ cursor: pointer;
+}
+.play-button img{
+  height: 17px;
+  width: 15px;
+}
+
+.hamburger{
+  display: none;
+  
+
+}
+.home{
+  position: relative;
+}
+
+.close{
+  display: none;
+  position: absolute;
+  right: 14px;
+  width: 21px;
+  top: 13px;
+}
+.play-button:hover,.b-1:hover,.hamburger:hover,.close:hover,.volume_bar:hover{
+cursor: pointer;
+}
+@media(max-width:840px){
+  .left{
+    position: absolute;
+    z-index: 1;
+    transition: all 0.5s;
+  left: -100%;
+  width: 348px;
+  }
+  .right{
+    width: 100vw;
+  }
+  .hamburger{
+    display: block;
+  }
+  .close{
+    display: block;
+    width: 21px;
+  }
+  .right .popular-artists .cards{
+    justify-content: center;
+    gap: 12px;
+  }
+  
+.right main .card{
+  margin: 12px 0px 0px 0px;
+}
+.right{
+  margin: 0px;
+}
+.right .playbar{
+  height: 120px;
+}
+.right .playbar .playbutton .play-button{
+  width: 29px;
+  height: 29px;
+  padding: 5px;
+}
+.b-1 svg{
+  height: 22px;
+}
+.line{
+  width: 60%;
+}
+.volume{
+  width: 105px;
+}
+.playbar-info{
+  text-align: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  
+  width: 50%;
+  
+  margin: 3px auto 0px auto;
+}
+.volume_bar{
+  margin-top: 4px;
+}
+
+.right .playbar .playbutton{
+  padding-top: 11px;
+}
+
+.playbar{
+  align-items: center;
+}
+.play{
+  width: 100%;
+}
+} 
+
+@media(min-width:840px) {
+  
+  .volume_bar{
+    position: absolute;
+    right: 13px;
+    top: 26px;
+  }
+  .right .playbar .playbar-info{
+    position: absolute;
+    width: 203px;
+    left: 24px;
+    left: 35px;
+    top: 10px;
+  }
+  
+}

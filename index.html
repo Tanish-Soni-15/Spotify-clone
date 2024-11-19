@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left bg-black">
+            <div class="home bg-gray m-1 p-1 border-radius">
+                <div class="logo"><img src="svg/logo.svg" class="invert " alt="Spotify"></div>
+                <img src="svg/close.svg" class="invert close" alt="">
+                <ul>
+                    <li class="w-1"><img src="svg/home.svg" class="invert" alt="H">Home</li>
+                    <li class="w-1"><img src="svg/search.svg" class="invert" alt="S">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-gray m-1 p-1 border-radius">
+                <header>
+                    <img src="svg/playerlist.svg" alt="P" class="invert">
+                    <p>Your Library</p>
+                    <img src="svg/plus.svg" class="plus invert" alt="+">
+                </header>
+                <main>
+                    <div id="playerlist" class="playerlist border-radius m-1 p-1">
+                        <table>
+                            <tr>
+                                <td class="track">#</td>
+                                <td class="td-flex">Title</td>
+                                <td>Duration</td>
+                            </tr>
+                        </table>
+                        <table id="table">
+
+
+
+
+                        </table>
+                    </div>
+                </main>
+                <footer>
+                    <div class="p-2">
+                        <div class="m-2">
+                            <a href="https://www.spotify.com/in-en/legal/">
+                                <span>Legal</span>
+                            </a>
+
+                            <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                                <span>Safety &amp; Privacy Center</span>
+                            </a>
+
+                            <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                                <span>Privacy Policy</span>
+                            </a>
+                        </div>
+                        <div class="m-2">
+                            <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                                <span>Cookies</span>
+                            </a>
+
+                            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                                <span>About Ads</span>
+                            </a>
+
+                            <a href="https://www.spotify.com/in-en/accessibility/">
+                                <span>Accessibility</span>
+                            </a>
+                        </div>
+                        <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank">
+                            <span data-encore-id="text">Cookies</span>
+                        </a>
+                    </div>
+                    <button class="w-1"><img src="svg/browser.svg" class="invert" alt="">English</button>
+                </footer>
+            </div>
+        </div>
+        <div class="right bg-gray m-1 p-1 border-radius ">
+            <header>
+                <nav>
+                    <img src="svg/humburger.svg" class="invert hamburger" alt="">
+                    <button id="goback"><svg class="invert" data-encore-id="icon" role="img" aria-hidden="true"
+                            class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                            <path
+                                d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z">
+                            </path>
+                        </svg></button>
+                    <button id="gonext"><svg class="invert" data-encore-id="icon" role="img" aria-hidden="true"
+                            class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                            <path
+                                d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z">
+                            </path>
+                        </svg></button>
+                </nav>
+                <div class="button">
+                    <button class="button-signup w-1">Sign up</button>
+                    <button class="button-login w-1">Log in</button>
+                </div>
+            </header>
+            <main>
+                <div class="popular-artists">
+                    <h1>Popular astists</h1>
+                    <div class="cards">
+
+                    </div>
+                </div>
+                <div class="playbar">
+                    
+                        <div class="playbar-info">
+
+                        </div>
+                  
+                    <div class="play">
+                        <div class="playbutton">
+                            <button id="previous-button" class="b-1">
+                                <svg class="invert" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                                    fill="none">
+                                    <path
+                                        d="M8.06492 12.6258C8.31931 13.8374 9.67295 14.7077 12.3802 16.4481C15.3247 18.3411 16.797 19.2876 17.9895 18.9229C18.3934 18.7994 18.7654 18.5823 19.0777 18.2876C20 17.4178 20 15.6118 20 12C20 8.38816 20 6.58224 19.0777 5.71235C18.7654 5.41773 18.3934 5.20057 17.9895 5.07707C16.797 4.71243 15.3247 5.6589 12.3802 7.55186C9.67295 9.29233 8.31931 10.1626 8.06492 11.3742C7.97836 11.7865 7.97836 12.2135 8.06492 12.6258Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                    <path d="M4 4L4 20" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <button id="play-button" class="play-button">
+                                <img src="svg/play.svg" alt="">
+                            </button>
+                            <button id="next-button" class="b-1">
+                                <svg class="invert" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                                    fill="none">
+                                    <path
+                                        d="M15.9351 12.6258C15.6807 13.8374 14.327 14.7077 11.6198 16.4481C8.67528 18.3411 7.20303 19.2876 6.01052 18.9229C5.60662 18.7994 5.23463 18.5823 4.92227 18.2876C4 17.4178 4 15.6118 4 12C4 8.38816 4 6.58224 4.92227 5.71235C5.23463 5.41773 5.60662 5.20057 6.01052 5.07707C7.20304 4.71243 8.67528 5.6589 11.6198 7.55186C14.327 9.29233 15.6807 10.1626 15.9351 11.3742C16.0216 11.7865 16.0216 12.2135 15.9351 12.6258Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                    <path d="M20 5V19" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="seekbar">
+                            <div class="currenttime">
+
+                            </div>
+                            <div class="line">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="duration">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="volume_bar">
+                        <img src="svg/volume.svg" class="invert volume_icon" alt="">
+                        <input type="range" name="volume" class="volume">
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
