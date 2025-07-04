@@ -31,9 +31,9 @@ let songsTitle = [];
 
 async function getsong(folder) {
 
-    let a = await fetch(`http://127.0.0.1:5500/songs/${folder}/`);
+    let a = await fetch(`/songs/${folder}/`);
     let response = await a.text();
-
+    console.log(a);
     let div = document.createElement("div");
     div.innerHTML = response;
     let as = div.getElementsByTagName("a");
