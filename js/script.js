@@ -33,7 +33,7 @@ async function getsong(folder) {
 
     let a = await fetch(`/songs/${folder}/`);
     let response = await a.text();
-    console.log(a);
+    console.log(response);
     let div = document.createElement("div");
     div.innerHTML = response;
     let as = div.getElementsByTagName("a");
