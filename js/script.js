@@ -95,7 +95,7 @@ async function playsong(track, t, a) {
 
 }
 async function displayAlbmus() {
-    let a = await fetch(`http://127.0.0.1:5500/songs/`);
+    let a = await fetch(`/songs/`);
     let response = await a.text();
 
     let div = document.createElement("div");
@@ -106,7 +106,7 @@ async function displayAlbmus() {
         let element = as[i];
         if (element.href.includes("/songs/")) {
             let folder = (element.href.split("/")[4]);
-            let a = await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`);
+            let a = await fetch(`/songs/${folder}/info.json`);
             let response = await a.json();
           
             cardContainer.innerHTML += `<div class="card" data-folder-name="${folder}">
