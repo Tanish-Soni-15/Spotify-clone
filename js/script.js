@@ -31,7 +31,7 @@ let songsTitle = [];
 
 async function getsong(folder) {
 
-    let a = await fetch(`/songs/${folder}/`);
+    let a = await fetch(`/public/songs/${folder}/`);
     let response = await a.text();
     console.log(response);
     let div = document.createElement("div");
@@ -95,22 +95,24 @@ async function playsong(track, t, a) {
 
 }
 async function displayAlbmus() {
-    let a = await fetch(`/songs/`);
+    let a = await fetch(`/public/songs/`);
     let response = await a.text();
 
     let div = document.createElement("div");
     div.innerHTML = response;
     let as = div.getElementsByTagName("a");
-    console.log(as);
+    console.log("as", as);
     for (let i = 0; i < as.length; i++) {
         let element = as[i];
-        if (element.href.includes("/songs/")) {
-            let folder = (element.href.split("/")[4]);
-            let a = await fetch(`/songs/${folder}/info.json`);
+        if (element.href.includes("/public/songs/")) {
+            console.log(element.href);
+            
+            let folder = (element.href.split("/")[5]);
+            let a = await fetch(`/public/songs/${folder}/info.json`);
             let response = await a.json();
           
             cardContainer.innerHTML += `<div class="card" data-folder-name="${folder}">
-            <img src="/songs/${folder}/cover.jpg" alt="">
+            <img src="/public/songs/${folder}/cover.jpg" alt="">
             <button class="folder_song_btn"><svg data-encore-id="icon" role="img" aria-hidden="true"
                     viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
                     <path
